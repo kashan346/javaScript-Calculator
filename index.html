@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A very basic Calculator using variables and functions</title>
+</head>
+<body>
+    <center>
+        <h1 style="background-color: dodgerblue;">A Basic Calculator</h1>
+         <button type="button" style="background-color: blue; color:blanchedalmond;"onclick="sum()">Sum</button>
+        <p id="result1"></p> 
+        <br>
+        <button type="button" style="background-color: chartreuse; color:chocolate;"onclick="difference()">Difference</button>
+        <p id="result2"></p>
+        <br>
+        <button type="button" style="background-color: darkred; color:beige;"onclick="multiply()">Multiplication</button>
+        <p id="result3"></p>
+        <br>
+        <button type="button" style="background-color: deeppink; color:azure;"onclick="divide()">Division</button>
+        <p id="result4"></p>
+
+        <script>
+            var a = 12;
+            var b = 7;
+
+
+            function sum() {
+                document.getElementById("result1").innerHTML = a+b;
+
+                function difference() {
+                    document.getElementById("result2").innerHTML = a - b;
+
+                    function multiply() { 
+                        document.getElementById("result3").innerHTML = a * b;
+
+                        function divide() {
+                            document.getElementById("result4").innerHTML = a / b;
+                        }
+                    }
+                }
+            }
+        </script>
+    </center>
+</body>
+</html>
